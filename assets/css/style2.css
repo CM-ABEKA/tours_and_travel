@@ -1,0 +1,99 @@
+:root {
+  --dark: #2c2e35;
+  --green: #a3cf44;
+  --red: #da6936;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0em auto;
+    color: var(--dark);
+  }
+  #about {
+    margin: 0 20px;
+  }
+  #home {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 0;
+    color: var(--dark);
+  }
+  #menu {
+    position: fixed;
+    bottom: 50px;
+    right: 70px;
+    z-index: 0;
+    color: var(--dark);
+  }
+  #navigation {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    top: 0px;
+    box-shadow: 2px 2px 35px -10px rgba(44, 46, 53, 0.56);
+    -webkit-box-shadow: 2px 2px 35px -10px rgba(44, 46, 53, 0.56);
+    -moz-box-shadow: 2px 2px 35px -10px rgba(44, 46, 53, 0.56);
+  }
+  #navigation .navbar-brand {
+    margin: 0px auto;
+    font-weight: 900;
+    color: var(--red);
+  }
+  #hero {
+    margin-top: 50px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  #hero h1 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  #hero .one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #hero .one img {
+    display: none;
+  }
+  #hero .one button {
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  #hero .one #btn-info {
+    background-color: var(--green);
+    font-weight: 700;
+    color: var(--dark);
+  }
+  #hero .one #btn-info:hover,
+  #hero .one #btn-info:focus {
+    transform: scale(1.05);
+  }
+  #hero .two {
+    width: 100%;
+  }
+  #form {
+    margin: 20px;
+  }
+  #footer {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+  }
+  #footer .social i {
+    margin-left: 20px;
+  }
+  #footer hr {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
